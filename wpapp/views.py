@@ -6,7 +6,7 @@ from .models import Wstation, Wproperty
 import datetime
 import csv
 from ftplib import FTP
-from StringIO import StringIO
+from io import StringIO
 from django.utils.dateparse import parse_datetime
 import matplotlib
 matplotlib.use('TkAgg') 
