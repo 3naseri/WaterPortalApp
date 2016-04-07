@@ -1,0 +1,9 @@
+{% if station_list %}
+    <ul>
+    {% for station in station_list %}
+        <li><a href="/wpapp/{{ station.id }}/">{{ station.station_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No station is available.</p>
+{% endif %}
